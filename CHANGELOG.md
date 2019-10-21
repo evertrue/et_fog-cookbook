@@ -1,5 +1,9 @@
 # CHANGELOG for et_fog
 
+## 4.0.2 (2019-10-21)
+
+* Pin dry-inflector to 0.1.2 to fix fog gem install
+
 ## 4.0.1 (2016-07-15)
 
 * Relax build-essential version constraint to 2.0

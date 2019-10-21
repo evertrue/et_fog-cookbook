@@ -1,4 +1,5 @@
 default['et_fog']['version'] = '1.37.0'
+default['et_fog']['dry_inflector_version'] = '0.1.2'
 default['et_fog']['dependencies'] =
   if platform_family? 'debian'
     %w(libxslt-dev libxml2-dev libghc-zlib-dev)

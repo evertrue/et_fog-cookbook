@@ -41,6 +41,13 @@ end
 
 # TODO: Remove this once the gem_hell cookbook is ready to roll
 
+# install dry-inflector with a specific version before installing fog because the fog-brightbox gem is not specifying a specific version of this gem
+# and the latest version of dry-inflector requires ruby 2.4 as a minimum
+chef_gem 'dry-inflector' do
+  compile_time true if Chef::Resource::ChefGem.method_defined? :compile_time
+  version node['et_fog']['dry_inflector_version']
+end
+
 chef_gem 'fog' do
   compile_time true if Chef::Resource::ChefGem.method_defined? :compile_time
   version node['et_fog']['version']

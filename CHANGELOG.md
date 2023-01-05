@@ -1,8 +1,8 @@
 # CHANGELOG for et_fog
 
-## 4.0.3 (2023-01-05)
+## 4.0.4 (2023-01-05)
 
-* Pin faraday, fog-aliyun and fog-vsphere
+* Pin fog-aliyun and fog-vsphere
 
 ## 4.0.2 (2019-10-21)
 

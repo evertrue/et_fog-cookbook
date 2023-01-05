@@ -48,6 +48,21 @@ chef_gem 'dry-inflector' do
   version node['et_fog']['dry_inflector_version']
 end
 
+chef_gem 'faraday' do
+  compile_time true if Chef::Resource::ChefGem.method_defined? :compile_time
+  version node['et_fog']['faraday_version']
+end
+
+chef_gem 'fog-aliyun' do
+  compile_time true if Chef::Resource::ChefGem.method_defined? :compile_time
+  version node['et_fog']['fog_aliyun_version']
+end
+
+chef_gem 'fog-vsphere' do
+  compile_time true if Chef::Resource::ChefGem.method_defined? :compile_time
+  version node['et_fog']['fog_vsphere_version']
+end
+
 chef_gem 'fog' do
   compile_time true if Chef::Resource::ChefGem.method_defined? :compile_time
   version node['et_fog']['version']

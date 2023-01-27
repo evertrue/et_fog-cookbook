@@ -1,5 +1,9 @@
 # CHANGELOG for et_fog
 
+## 4.0.4 (2023-01-26)
+
+* Pin webrick
+
 ## 4.0.4 (2023-01-05)
 
 * Pin fog-aliyun and fog-vsphere

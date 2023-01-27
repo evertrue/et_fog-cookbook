@@ -58,6 +58,11 @@ chef_gem 'fog-vsphere' do
   version node['et_fog']['fog_vsphere_version']
 end
 
+chef_gem 'webrick' do
+  compile_time true if Chef::Resource::ChefGem.method_defined? :compile_time
+  version node['et_fog']['webrick_version']
+end
+
 chef_gem 'fog' do
   compile_time true if Chef::Resource::ChefGem.method_defined? :compile_time
   version node['et_fog']['version']
